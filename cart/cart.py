@@ -85,3 +85,13 @@ class Cart:
         for item in self.cart.item_set.all():
             item.delete()
 
+    def check_out(self):
+        cart = models.Cart.objects.get(pk=self.cart.id)
+        cart.checked_out = True
+        cart.save()
+
+    def venda_valor(self, cart_pk):
+        result = 0
+        for item in self.cart.item_set.filter(cart=cart_pk):
+            result += item.total_price
+        return result
