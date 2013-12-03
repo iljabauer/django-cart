@@ -6,6 +6,7 @@ from django.contrib.contenttypes import generic
 class Cart(models.Model):
     creation_date = models.DateTimeField(verbose_name=_('creation date'))
     checked_out = models.BooleanField(default=False, verbose_name=_('checked out'))
+    desconto = models.DecimalField(max_length=5, verbose_name='Desconto', null=True)
 
     class Meta:
         verbose_name = _('cart')
@@ -14,6 +15,7 @@ class Cart(models.Model):
 
     def __unicode__(self):
         return unicode(self.creation_date)
+
 
 class ItemManager(models.Manager):
     def get(self, *args, **kwargs):
@@ -47,7 +49,7 @@ class Item(models.Model):
 
     # product
     def get_product(self):
-        return self.content_type.get_object_for_this_type(pk=self.object_id)
+        return self.content_type.get_object_for_this_type(id=self.object_id)
 
     def set_product(self, product):
         self.content_type = ContentType.objects.get_for_model(type(product))
