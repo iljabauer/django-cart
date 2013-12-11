@@ -6,7 +6,6 @@ from django.contrib.contenttypes import generic
 class Cart(models.Model):
     creation_date = models.DateTimeField(verbose_name=_('creation date'))
     checked_out = models.BooleanField(default=False, verbose_name=_('checked out'))
-    desconto = models.DecimalField(max_length=5, verbose_name='Desconto', null=True)
 
     class Meta:
         verbose_name = _('cart')
