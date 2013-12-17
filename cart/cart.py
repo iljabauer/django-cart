@@ -82,10 +82,7 @@ class Cart:
         result = 0
         for item in self.cart.item_set.all():
             result += item.total_price
-        if self.cart.desconto:
-           return result - decimal.Decimal(self.cart.desconto)
-        else:
-            return result
+        return result
 
     def clear(self):
         for item in self.cart.item_set.all():
@@ -100,5 +97,5 @@ class Cart:
         result = 0
         for item in self.cart.item_set.filter(cart=cart_pk):
             result += item.total_price
-        return result - decimal.Decimal(self.cart.desconto)
+        return result
 

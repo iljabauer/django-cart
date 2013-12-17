@@ -7,6 +7,7 @@ class Cart(models.Model):
     creation_date = models.DateTimeField(verbose_name=_('creation date'))
     checked_out = models.BooleanField(default=False, verbose_name=_('checked out'))
 
+
     class Meta:
         verbose_name = _('cart')
         verbose_name_plural = _('carts')
