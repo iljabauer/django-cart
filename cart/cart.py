@@ -28,11 +28,17 @@ class Cart:
 
     def new(self, request):
         cart = models.Cart(creation_date=datetime.datetime.now())
-        cart.save()
-        request.session[CART_ID] = cart.id
+        # cart.save()
+        # request.session[CART_ID] = cart.id
         return cart
 
+    def create_cart(self):
+        if not self.cart.id:
+            self.cart.save()
+            request.session[CART_ID] = self.cart.id
+
     def add(self, product, unit_price, quantity=1):
+        self.create_cart()
         try:
             item = models.Item.objects.get(
                 cart=self.cart,
