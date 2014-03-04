@@ -12,6 +12,7 @@ class ItemDoesNotExist(Exception):
 
 class Cart:
     def __init__(self, request):
+        self.__request = request
         cart_id = request.session.get(CART_ID)
         if cart_id:
             try:
@@ -35,7 +36,7 @@ class Cart:
     def create_cart(self):
         if not self.cart.id:
             self.cart.save()
-            request.session[CART_ID] = self.cart.id
+            self.__request.session[CART_ID] = self.cart.id
 
     def add(self, product, unit_price, quantity=1):
         self.create_cart()
