@@ -1,7 +1,6 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.contrib.contenttypes.models import ContentType
-from django.contrib.contenttypes import generic
 
 class Cart(models.Model):
     creation_date = models.DateTimeField(verbose_name=_('creation date'))
@@ -44,7 +43,8 @@ class Item(models.Model):
         return u'%d units of %s' % (self.quantity, self.product.__class__.__name__)
 
     def total_price(self):
-        return self.quantity * self.unit_price
+        result = self.quantity * self.unit_price
+        return result.quantize(Decimal("0.00")) 
     total_price = property(total_price)
 
     # product
