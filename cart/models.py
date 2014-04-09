@@ -44,8 +44,11 @@ class Item(models.Model):
 
     def total_price(self):
         result = self.quantity * self.unit_price
-        return result.quantize(Decimal("0.00")) 
+        return result.quantize(Decimal("0.00"))
     total_price = property(total_price)
+
+    def get_unit_price(self):
+        return self.unit_price.quantize(Decimal("0.00"))
 
     # product
     def get_product(self):
