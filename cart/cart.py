@@ -80,16 +80,10 @@ class Cart:
             raise ItemDoesNotExist
 
     def count(self):
-        result = 0
-        for item in self.cart.item_set.all():
-            result += 1 * item.quantity
-        return result
+        return self.cart.summary()
 
     def summary(self):
-        result = 0
-        for item in self.cart.item_set.all():
-            result += item.total_price
-        return result
+        return self.cart.summary()
 
     def clear(self):
         for item in self.cart.item_set.all():

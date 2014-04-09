@@ -11,6 +11,18 @@ class Cart(models.Model):
         verbose_name = _('cart')
         verbose_name_plural = _('carts')
         ordering = ('-creation_date',)
+    
+    def count(self):
+        result = 0
+        for item in self.item_set.all():
+            result += 1 * item.quantity
+        return result
+
+    def summary(self):
+        result = 0
+        for item in self.item_set.all():
+            result += item.total_price
+        return result
 
     def __unicode__(self):
         return unicode(self.creation_date)
