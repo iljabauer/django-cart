@@ -80,7 +80,7 @@ class Cart:
             raise ItemDoesNotExist
 
     def count(self):
-        return self.cart.summary()
+        return self.cart.count()
 
     def summary(self):
         return self.cart.summary()
