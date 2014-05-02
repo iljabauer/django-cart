@@ -90,7 +90,7 @@ class Cart:
         try:
             return settings.CART_SHIPPING_COSTS
         except AttributeError:
-            return Decimal(0)
+            return Decimal("0.00")
 
     def clear(self):
         for item in self.cart.item_set.all():
