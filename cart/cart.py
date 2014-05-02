@@ -1,6 +1,7 @@
 import datetime
+from decimal import Decimal
 import models
-import decimal
+from django.conf import settings
 
 CART_ID = 'CART-ID'
 
@@ -83,7 +84,13 @@ class Cart:
         return self.cart.count()
 
     def summary(self):
-        return self.cart.summary()
+        return self.cart.summary()+self.shipping_costs()
+
+    def shipping_costs(self):
+        try:
+            return settings.CART_SHIPPING_COSTS
+        except AttributeError:
+            return Decimal(0)
 
     def clear(self):
         for item in self.cart.item_set.all():
