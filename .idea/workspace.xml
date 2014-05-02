@@ -7,7 +7,7 @@
     <ignored path="django-cart.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1399046639026" ignored="false" />
-    <file path="/cart.py" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1399047260353" ignored="false" />
+    <file path="/cart.py" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1399047428681" ignored="false" />
     <file path="$PROJECT_DIR$/../devboost/NatSpecTest/de.iljabauer.projects.natspec.python/venv/src/django-cart/cart/cart.py" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1397149662273" ignored="false" />
     <file path="/user.py" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1397233605953" ignored="false" />
     <file path="$PROJECT_DIR$/../nat_heroku/backend/admin/user.py" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1397234551967" ignored="false" />
@@ -37,7 +37,7 @@
     <file path="$PROJECT_DIR$/../cuescience/bundesliga/frontend/templates/frontend/live.html" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1397374389373" ignored="false" />
     <file path="$PROJECT_DIR$/../nat_heroku/product/templates/product/product_details.html" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1397374316786" ignored="false" />
     <file path="/product_details.html" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1397336652207" ignored="false" />
-    <file path="$PROJECT_DIR$/../cuescience/website_new/shop/models.py" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1399046917206" ignored="false" />
+    <file path="$PROJECT_DIR$/../cuescience/website_new/shop/models.py" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1399047290166" ignored="false" />
     <file path="$PROJECT_DIR$/../cuescience/website_new/cuescience_website/settings.py" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1399047251693" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +79,7 @@
       <file leaf-file-name="cart.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cart/cart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="32" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.5120226">
+            <state line="89" column="38" selection-start="2463" selection-end="2463" vertical-scroll-proportion="0.46958983">
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -415,7 +415,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cart/cart.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="32" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.5120226">
+        <state line="89" column="38" selection-start="2463" selection-end="2463" vertical-scroll-proportion="0.46958983">
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

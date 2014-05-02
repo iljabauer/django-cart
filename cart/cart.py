@@ -84,7 +84,10 @@ class Cart:
         return self.cart.count()
 
     def summary(self):
-        return self.cart.summary()+self.shipping_costs()
+        if self.count:
+            return self.cart.summary()+self.shipping_costs()
+        else:
+            return self.cart.summary()
 
     def shipping_costs(self):
         try:
