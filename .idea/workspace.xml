@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51df33e4-ec9b-4318-903c-3016d594352c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart/cart.py" afterPath="$PROJECT_DIR$/cart/cart.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <ignored path="django-cart.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +25,7 @@
     <file path="$PROJECT_DIR$/../nat_heroku/backend/templates/admin/backend/client/change_form_read.html" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1397234551967" ignored="false" />
     <file path="/change_form_read.html" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1397233827261" ignored="false" />
     <file path="$PROJECT_DIR$/../nat_heroku/backend/templates/admin/backend/client/change_client_form.html" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1397234551967" ignored="false" />
-    <file path="/index.html" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1397313351182" ignored="false" />
+    <file path="/index.html" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1399047876044" ignored="false" />
     <file path="$PROJECT_DIR$/../nat_laden/laden/models.py" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1397237358035" ignored="false" />
     <file path="/models.py" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1399046899809" ignored="false" />
     <file path="$PROJECT_DIR$/../nat_laden/nat_laden/settings.py" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1397236855497" ignored="false" />
@@ -39,6 +39,7 @@
     <file path="/product_details.html" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1397336652207" ignored="false" />
     <file path="$PROJECT_DIR$/../cuescience/website_new/shop/models.py" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1399047290166" ignored="false" />
     <file path="$PROJECT_DIR$/../cuescience/website_new/cuescience_website/settings.py" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1399047251693" ignored="false" />
+    <file path="$PROJECT_DIR$/../cuescience/website_new/frontend/templates/cuescience_shop/cart/index.html" changelist="51df33e4-ec9b-4318-903c-3016d594352c" time="1399047876044" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +77,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="cart.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cart/cart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="38" selection-start="2463" selection-end="2463" vertical-scroll-proportion="0.46958983">
+            <state line="89" column="38" selection-start="2463" selection-end="2463" vertical-scroll-proportion="-13.28">
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="22" selection-start="209" selection-end="209" vertical-scroll-proportion="0.19094767">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,6 +134,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/cart/cart.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
@@ -304,13 +315,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cart/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cart/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -415,10 +419,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cart/cart.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="38" selection-start="2463" selection-end="2463" vertical-scroll-proportion="0.46958983">
+        <state line="89" column="38" selection-start="2463" selection-end="2463" vertical-scroll-proportion="-13.28">
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="22" selection-start="209" selection-end="209" vertical-scroll-proportion="0.19094767">
+          <folding />
         </state>
       </provider>
     </entry>
